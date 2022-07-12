@@ -6,12 +6,12 @@ export const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/wishlists" element={<Home />} />
         <Route path="/trips" element={<Home />} />
         <Route path="/inbox" element={<Home />} />
         <Route path="/account-settings" element={<Home />} />
-        <Route path="*" element={<Home />} />
+        {/* <Route path="*" element={<Home />} /> */}
       </Routes>
     </BrowserRouter>
   );

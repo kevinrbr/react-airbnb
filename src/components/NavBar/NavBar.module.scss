@@ -1,3 +1,41 @@
-.navBar {
-    background-color: blue;
+@import "../../sassStyles/_functions.scss";
+@import "../../sassStyles/variables.scss";
+
+.bottomNav{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgb(235, 235, 235) !important;
+    padding: pxToRem(12px) 0 pxToRem(12px) 0;
+}
+
+.bottomNavList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomNavItem {
+    width: pxToRem(75px);
+
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.bottomNavSubTitle {
+    font-size: pxToRem(10px);
+    color: $gray-primary;
+    display: block;
+    margin-top: pxToRem(5px);
+}
+
+.bottomNavSubTitleActive {
+    font-size: pxToRem(10px);
+    color: $black;
+    display: block;
+    margin-top: pxToRem(5px);
 }
