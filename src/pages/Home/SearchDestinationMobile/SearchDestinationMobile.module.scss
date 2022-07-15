@@ -1,0 +1,84 @@
+@import "../../../sassStyles/variables";
+@import "../../../sassStyles/functions";
+
+
+.searchContainer {
+    padding: pxToRem(14px) pxToRem(24px) 0 pxToRem(24px);
+}
+
+.searchBar {
+    display: flex;
+    border: pxToRem(0.5px) solid rgba(0,0,0,0.08);
+    box-shadow: 0 pxToRem(3px) pxToRem(3px) rgb(0 0 0 / 10%);
+    border-radius: pxToRem(1000px);
+    min-height: pxToRem(56px);
+    align-items: stretch;
+    min-height: pxToRem(56px);
+    min-width: pxToRem(285px);
+}
+
+.searchLeft {
+    display: flex;
+    align-items: center;
+    display: flex;
+    min-width: pxToRem(100px);
+}
+
+.searchContent {
+    text-align: left;
+    min-width: pxToRem(50px);
+}
+
+.searchSubTitles {
+    display: flex;
+}
+
+.searchTitle {
+    font-size: pxToRem(15px);
+}
+
+.searchSubTitleContainer {
+    display: flex;
+    min-width: pxToRem(50px);
+}
+
+.searchSubTitle {
+    font-weight: 100;
+    color: $gray-primary;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: pxToRem(12px);
+}
+
+.searchDot {
+    color: $gray-primary;
+    padding: 0 pxToRem(5px);
+    display: flex;
+    align-items: center;
+    font-size: pxToRem(5px);
+}
+
+.researchSvg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 pxToRem(16px) 0 pxToRem(20px);
+}
+
+.filterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterSvg {
+    margin: 0 pxToRem(5px);
+    border-radius: pxToRem(25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: pxToRem(36px);
+    height: pxToRem(36px);
+    border: pxToRem(1px) solid $gray-light;
+}   

@@ -49,7 +49,7 @@ const NavBar = () => {
                 {typeof Icon === "function" && (
                   <Icon
                     color={
-                      location.pathname === `/${link}` ? "#ff385c" : "#979797"
+                      location.pathname === `/${link}` ? "#ff385c" : "#b4b4b4"
                     }
                   />
                 )}
