@@ -5,7 +5,7 @@ import FilterSvg from "../../../components/Icons/FilterSvg";
 
 const SearchDestinationMobile = () => {
   return (
-    <div className={styles.searchContainer}>
+    <div className={styles.container}>
       <div className={styles.searchBar}>
         <div className={styles.searchLeft}>
           <button className={styles.researchSvg}>

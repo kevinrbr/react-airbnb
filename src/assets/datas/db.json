@@ -1,0 +1,15 @@
+{
+    "destinations": [
+      {
+        "id": 1,
+        "category": "isles",
+        "title": "Gand Belgique",
+        "location": "Parc national Oosterschlde",
+        "sellerStatus": "Professionnel",
+        "beginningDate": "04-09-2022",
+        "finshingDate": "09-09-2022",
+        "priceByNight": 152,
+        "stars": "5,0"
+      }
+    ]
+  }

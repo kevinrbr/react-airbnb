@@ -7,8 +7,6 @@ import ProfileSvg from "../Icons/ProfileSvg";
 import ResearchSvg from "../Icons/ResearchSvg";
 import styles from "./NavBar.module.scss";
 
-// const navBarLinks = [ResearchSvg, HeartSvg, AirbnbSvg, MessageSvg, ProfileSvg];
-
 const navBarLinks = [
   {
     Icon: ResearchSvg,
