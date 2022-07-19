@@ -42,7 +42,7 @@ const NavBar = () => {
       <ul className={styles.bottomNavList}>
         {navBarLinks.map(({ Icon, link, subTitle }) => {
           return (
-            <li className={styles.bottomNavItem}>
+            <li className={styles.bottomNavItem} key={subTitle}>
               <Link to={`/${link}`}>
                 {typeof Icon === "function" && (
                   <Icon

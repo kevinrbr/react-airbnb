@@ -1,15 +1,70 @@
 {
     "destinations": [
       {
+        "image": "../images/destinations/badachro/1.webp",
         "id": 1,
         "category": "isles",
-        "title": "Gand Belgique",
-        "location": "Parc national Oosterschlde",
+        "location": "Badachro, Royaume-uni",
         "sellerStatus": "Professionnel",
-        "beginningDate": "04-09-2022",
-        "finshingDate": "09-09-2022",
-        "priceByNight": 152,
-        "stars": "5,0"
+        "beginningDate": "17-11-2022",
+        "finshingDate": "22-11-2022",
+        "priceByNight": 207,
+        "stars": 4.71
+      },
+      {
+        "image": "../images/destinations/gildeskal/1.webp",
+        "id": 2,
+        "category": "isles",
+        "location": "Gildeskål, Norvège",
+        "sellerStatus": "Professionnel",
+        "beginningDate": "20-09-2022",
+        "finshingDate": "26-09-2022",
+        "priceByNight": 246,
+        "stars": 4.83
+      },
+      {
+        "image": "../images/destinations/murter/1.webp",
+        "id": 3,
+        "category": "isles",
+        "location": "Murter, Croatie",
+        "sellerStatus": "Particulier",
+        "beginningDate": "29-10-2022",
+        "finshingDate": "05-11-2022",
+        "priceByNight": 137,
+        "stars": 5.0
+      },
+      {
+        "image": "../images/destinations/murter/1.webp",
+        "id": 3,
+        "category": "isles",
+        "location": "Murter, Croatie",
+        "sellerStatus": "Particulier",
+        "beginningDate": "29-10-2022",
+        "finshingDate": "05-11-2022",
+        "priceByNight": 137,
+        "stars": 5.0
+      },
+      {
+        "image": "../images/destinations/murter/1.webp",
+        "id": 3,
+        "category": "isles",
+        "location": "Murter, Croatie",
+        "sellerStatus": "Particulier",
+        "beginningDate": "29-10-2022",
+        "finshingDate": "05-11-2022",
+        "priceByNight": 137,
+        "stars": 5.0
+      },
+      {
+        "image": "../images/destinations/murter/1.webp",
+        "id": 3,
+        "category": "isles",
+        "location": "Murter, Croatie",
+        "sellerStatus": "Particulier",
+        "beginningDate": "29-10-2022",
+        "finshingDate": "05-11-2022",
+        "priceByNight": 137,
+        "stars": 5.0
       }
     ]
   }

@@ -4,7 +4,7 @@
 .container {
     padding: 0 pxToRem(24px);
     overflow: auto;
-    border: pxToRem(0.5px) solid rgba(0,0,0,0.08);
+    border-bottom: pxToRem(0.5px) solid rgba(0,0,0,0.08);
     box-shadow: 0 pxToRem(3px) pxToRem(3px) rgb(0 0 0 / 4%);
 }
 

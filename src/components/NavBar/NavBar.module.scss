@@ -2,12 +2,13 @@
 @import "../../sassStyles/variables.scss";
 
 .bottomNav{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     border-top: 1px solid rgb(235, 235, 235) !important;
     padding: pxToRem(12px) 0 pxToRem(12px) 0;
+    background-color: $white;
 }
 
 .bottomNavList {

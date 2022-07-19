@@ -56,6 +56,7 @@ const CarouselCategory = () => {
                 active === item.title ? styles.categoriesItemActive : ""
               } ${styles.categoriesItem}`}
               onClick={() => setActive(item.title)}
+              key={item.title}
             >
               <img src={item.pictures} className={styles.images} />
               <span className={styles.title}>{item.title}</span>

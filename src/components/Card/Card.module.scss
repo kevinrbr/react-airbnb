@@ -1,0 +1,36 @@
+@import "../../sassStyles/functions";
+
+.card {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+
+.contentLeft {
+    display: grid;
+    gap: pxToRem(8px);
+}
+
+.contentRight {
+    text-align: right;
+}
+
+.imagesContainer {
+    border-radius: pxToRem(12px);
+    overflow: hidden;
+    margin-bottom: pxToRem(12px);
+}
+
+.images {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 21.05/20;
+}
+
+.location {
+    font-size: pxToRem(15px);
+}
