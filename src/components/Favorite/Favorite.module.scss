@@ -1,0 +1,8 @@
+@import "../../sassStyles/functions";
+
+.favorite {
+    position: absolute;
+    top: pxToRem(16px);
+    right: pxToRem(16px);
+    z-index: 100;
+}

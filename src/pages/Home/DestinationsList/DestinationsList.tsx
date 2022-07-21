@@ -3,6 +3,7 @@ import styles from "./DestinationsList.module.scss";
 import axios from "axios";
 import { destinations } from "../../../types/destinations/destinations";
 import Card from "../../../components/Card/Card";
+import CardCarousel from "../../../components/CardCarousel/CardCarousel";
 
 const DestinationsList = () => {
   const [destinationsList, setDestinationsList] = useState<destinations[]>([]);
@@ -26,7 +27,9 @@ const DestinationsList = () => {
               finshingDate={item.finshingDate}
               priceByNight={item.priceByNight}
               stars={item.stars}
-            />
+            >
+              <CardCarousel image={item.image} />
+            </Card>
           );
         })}
       </ul>

@@ -8,7 +8,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: pxToRem(24px);
-    margin-top: pxToRem(60px);
+    margin-top: pxToRem(50px);
 
     @include md {
         padding: 0 pxToRem(80px);

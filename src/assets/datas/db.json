@@ -1,7 +1,7 @@
 {
     "destinations": [
       {
-        "image": "../images/destinations/badachro/1.webp",
+        "image": ["../images/destinations/badachro/1.webp","../images/destinations/badachro/2.webp", "../images/destinations/badachro/2.webp", "../images/destinations/badachro/2.webp", "../images/destinations/badachro/2.webp", "../images/destinations/badachro/2.webp", "../images/destinations/badachro/2.webp"],
         "id": 1,
         "category": "isles",
         "location": "Badachro, Royaume-uni",
@@ -12,7 +12,7 @@
         "stars": 4.71
       },
       {
-        "image": "../images/destinations/gildeskal/1.webp",
+        "image": ["../images/destinations/gildeskal/1.webp","../images/destinations/gildeskal/2.webp"],
         "id": 2,
         "category": "isles",
         "location": "Gildeskål, Norvège",
@@ -23,7 +23,7 @@
         "stars": 4.83
       },
       {
-        "image": "../images/destinations/murter/1.webp",
+        "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
         "id": 3,
         "category": "isles",
         "location": "Murter, Croatie",
@@ -34,7 +34,7 @@
         "stars": 5.0
       },
       {
-        "image": "../images/destinations/murter/1.webp",
+        "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
         "id": 3,
         "category": "isles",
         "location": "Murter, Croatie",
@@ -45,7 +45,7 @@
         "stars": 5.0
       },
       {
-        "image": "../images/destinations/murter/1.webp",
+        "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
         "id": 3,
         "category": "isles",
         "location": "Murter, Croatie",
@@ -56,7 +56,62 @@
         "stars": 5.0
       },
       {
-        "image": "../images/destinations/murter/1.webp",
+        "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
+        "id": 3,
+        "category": "isles",
+        "location": "Murter, Croatie",
+        "sellerStatus": "Particulier",
+        "beginningDate": "29-10-2022",
+        "finshingDate": "05-11-2022",
+        "priceByNight": 137,
+        "stars": 5.0
+      },
+      {
+        "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
+        "id": 3,
+        "category": "isles",
+        "location": "Murter, Croatie",
+        "sellerStatus": "Particulier",
+        "beginningDate": "29-10-2022",
+        "finshingDate": "05-11-2022",
+        "priceByNight": 137,
+        "stars": 5.0
+      },
+      {
+        "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
+        "id": 3,
+        "category": "isles",
+        "location": "Murter, Croatie",
+        "sellerStatus": "Particulier",
+        "beginningDate": "29-10-2022",
+        "finshingDate": "05-11-2022",
+        "priceByNight": 137,
+        "stars": 5.0
+      },
+      {
+        "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
+        "id": 3,
+        "category": "isles",
+        "location": "Murter, Croatie",
+        "sellerStatus": "Particulier",
+        "beginningDate": "29-10-2022",
+        "finshingDate": "05-11-2022",
+        "priceByNight": 137,
+        "stars": 5.0
+      },
+      {
+        "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
+        "id": 3,
+        "category": "isles",
+        "location": "Murter, Croatie",
+        "sellerStatus": "Particulier",
+        "beginningDate": "29-10-2022",
+        "finshingDate": "05-11-2022",
+        "priceByNight": 137,
+        "stars": 5.0
+      },
+      {
+        "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
         "id": 3,
         "category": "isles",
         "location": "Murter, Croatie",

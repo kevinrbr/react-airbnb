@@ -1,33 +1,37 @@
 import React from "react";
+import Rating from "../Rating/Rating";
 import styles from "./Card.module.scss";
+import PriceByNight from "../PriceByNight/PriceByNight";
+import CardDescription from "../CardDescription/CardDescription";
+import Favorite from "../Favorite/Favorite";
 
 interface DestinationsProps {
-  image: string;
+  image: string[];
   location: string;
   sellerStatus: string;
   begginningDate: Date;
   finshingDate: Date;
   priceByNight: number;
   stars: number;
+  children: React.ReactNode;
 }
 
 const Card = (props: DestinationsProps) => {
   return (
     <li className={styles.card}>
-      <div className={styles.imagesContainer}>
-        <img className={styles.images} src={props.image} />
-      </div>
+      <Favorite />
+      {props.children}
       <div className={styles.content}>
         <div className={styles.contentLeft}>
-          <h6 className={styles.location}>{props.location}</h6>
-          <p className={styles.sellerStatus}>{props.sellerStatus}</p>
-          <p className={styles.date}>7-12 mai</p>
-          <p className={styles.price}>
-            <span>{props.priceByNight}€ </span>/ nuit
-          </p>
+          <CardDescription
+            location={props.location}
+            sellerStatus={props.sellerStatus}
+            date={"7-12 mai"}
+          />
+          <PriceByNight price={props.priceByNight} />
         </div>
         <div className={styles.contentRight}>
-          <span className={styles.notation}>{props.stars}</span>
+          <Rating rating={props.stars} />
         </div>
       </div>
     </li>

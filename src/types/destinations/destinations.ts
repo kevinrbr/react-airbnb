@@ -1,5 +1,5 @@
 export type destinations = {
-  image: string;
+  image: string[];
   id: number;
   category: string;
   title: string;
