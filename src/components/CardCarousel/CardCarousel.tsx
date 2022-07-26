@@ -8,7 +8,6 @@ interface CardCarouselProps {
 }
 
 const CardCarousel = ({ image }: CardCarouselProps) => {
-  console.log(image);
   const indicatorStyles: CSSProperties = {
     background: "#fff",
     width: 6,

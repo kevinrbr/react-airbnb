@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../../components/Header/Header";
 import NavBar from "../../components/NavBar/NavBar";
 import CarouselCategory from "./CarouselCategory/CarouselCategory";
 import DestinationsList from "./DestinationsList/DestinationsList";
@@ -7,7 +8,7 @@ import SearchDestinationMobile from "./SearchDestinationMobile/SearchDestination
 const Home = () => {
   return (
     <div>
-      <SearchDestinationMobile />
+      <Header />
       <CarouselCategory />
       <DestinationsList />
       <NavBar />
