@@ -1,0 +1,18 @@
+@import "../../../sassStyles/variables";
+@import "../../../sassStyles/functions";
+
+.container {
+    padding: pxToRem(24px);
+}
+
+.title {
+    font-size: pxToRem(18px);
+    font-size: $light-black;
+    margin-bottom: pxToRem(16px);
+}
+
+.subTitle {
+    font-size: pxToRem(16px);
+    color: $gray-primary;
+    font-weight: 100;
+}

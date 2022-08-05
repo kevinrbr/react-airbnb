@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./DestinationsList.module.scss";
 import axios from "axios";
 import { destinations } from "../../../types/destinations/destinations";
@@ -11,25 +12,28 @@ const DestinationsList = () => {
   useEffect(() => {
     axios
       .get("http://localhost:3001/destinations")
-      .then((res) => setDestinationsList(res.data));
+      .then((data) => setDestinationsList(data.data));
   }, []);
 
   return (
     <>
+      <p className={styles.textFilter}>Classement par ordre de pertinence</p>
       <ul className={styles.destinationsList}>
         {destinationsList.map((item) => {
           return (
-            <Card
-              image={item.image}
-              location={item.location}
-              sellerStatus={item.sellerStatus}
-              begginningDate={item.begginningDate}
-              finshingDate={item.finshingDate}
-              priceByNight={item.priceByNight}
-              stars={item.stars}
-            >
-              <CardCarousel image={item.image} />
-            </Card>
+            <Link target="_blank" state={item} to={`/roomDetails/${item.id}`}>
+              <Card
+                image={item.image}
+                location={item.location}
+                sellerStatus={item.sellerStatus}
+                begginningDate={item.begginningDate}
+                finshingDate={item.finshingDate}
+                priceByNight={item.priceByNight}
+                stars={item.stars}
+              >
+                <CardCarousel image={item.image} />
+              </Card>
+            </Link>
           );
         })}
       </ul>

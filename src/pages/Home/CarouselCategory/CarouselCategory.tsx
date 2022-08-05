@@ -13,39 +13,102 @@ const Categories = [
   {
     pictures: Isles,
     title: "Iles",
+    id: 1,
   },
   {
     pictures: NationnalsParks,
     title: "Parcs Nationaux",
+    id: 2,
   },
   {
     pictures: TinyHouses,
     title: "Tiny Houses",
+    id: 3,
   },
   {
     pictures: Wow,
     title: "Wow !",
+    id: 4,
   },
   {
     pictures: Playas,
     title: "Plages",
+    id: 5,
   },
   {
     pictures: Cabanes,
     title: "Cabanes",
+    id: 6,
   },
   {
     pictures: Design,
     title: "Design",
+    id: 7,
   },
   {
     pictures: Camping,
     title: "Camping",
+    id: 8,
+  },
+  {
+    pictures: Camping,
+    title: "Camping",
+    id: 9,
+  },
+  {
+    pictures: Camping,
+    title: "Camping",
+    id: 10,
+  },
+  {
+    pictures: Camping,
+    title: "Camping",
+    id: 11,
+  },
+  {
+    pictures: Camping,
+    title: "Camping",
+    id: 12,
+  },
+  {
+    pictures: Camping,
+    title: "Camping",
+    id: 13,
+  },
+  {
+    pictures: Camping,
+    title: "Camping",
+    id: 14,
+  },
+  {
+    pictures: Camping,
+    title: "Camping",
+    id: 15,
+  },
+  {
+    pictures: Camping,
+    title: "Camping",
+    id: 16,
+  },
+  {
+    pictures: Camping,
+    title: "Camping",
+    id: 17,
+  },
+  {
+    pictures: Camping,
+    title: "Camping",
+    id: 18,
+  },
+  {
+    pictures: Camping,
+    title: "Camping",
+    id: 19,
   },
 ];
 
 const CarouselCategory = () => {
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState<Number>(1);
   return (
     <div className={styles.container}>
       <ul className={styles.categoriesList}>
@@ -53,9 +116,9 @@ const CarouselCategory = () => {
           return (
             <li
               className={`${
-                active === item.title ? styles.categoriesItemActive : ""
+                active === item.id ? styles.categoriesItemActive : ""
               } ${styles.categoriesItem}`}
-              onClick={() => setActive(item.title)}
+              onClick={() => setActive(item.id)}
               key={item.title}
             >
               <img src={item.pictures} className={styles.images} />

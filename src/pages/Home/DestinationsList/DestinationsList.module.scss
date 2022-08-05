@@ -8,10 +8,34 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: pxToRem(24px);
-    margin-top: pxToRem(50px);
+
+    @include sm {
+        grid-template-columns: 1fr 1fr;
+    }
 
     @include md {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include lg {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         padding: 0 pxToRem(80px);
+    }
+
+    @include xxxl {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.textFilter {
+    margin: pxToRem(20px) 0 pxToRem(30px) 0;
+    padding: 0 pxToRem(24px);
+    font-size: pxToRem(16px);
+    line-height: pxToRem(24px);
+    font-weight: 100;
+
+    @include lg {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0 pxToRem(80px);
     }
 }

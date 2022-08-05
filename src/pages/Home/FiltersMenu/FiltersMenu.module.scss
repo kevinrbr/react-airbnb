@@ -1,0 +1,28 @@
+@import "../../../sassStyles/variables";
+@import "../../../sassStyles/functions";
+
+.container {
+    position: absolute;
+    background-color: $white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: pxToRem(16px);
+    font-weight: 600;
+    color: $light-black;
+    padding: pxToRem(15px) 0;
+    border-bottom: pxToRem(0.5px) solid $gray-light;
+
+    svg {
+        position: absolute;
+        left: pxToRem(20px);
+    }
+}

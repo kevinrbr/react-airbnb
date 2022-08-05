@@ -1,0 +1,35 @@
+@import "../../sassStyles/_functions.scss";
+@import "../../sassStyles/variables.scss";
+
+.container {
+    position: relative;
+}
+
+.imgContainer {
+    height: pxToRem(30px);
+    width: pxToRem(30px);
+    border-radius: pxToRem(100px);
+    overflow: hidden;
+    margin-left: pxToRem(12px);
+
+    img {
+        width: 100%;
+    }
+}
+
+.notification {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: pxToRem(20px);
+    width: pxToRem(20px);
+    border-radius: 100%;
+    top: pxToRem(-9px);
+    right: pxToRem(-9px);
+    background-color: $pink-primary;
+    border: pxToRem(2px) solid $white;
+    color: $white;
+    font-size: pxToRem(10px);
+    font-weight: 300;
+}

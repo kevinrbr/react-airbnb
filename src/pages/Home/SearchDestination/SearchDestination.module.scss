@@ -1,0 +1,51 @@
+@import "../../../sassStyles/variables";
+@import "../../../sassStyles/functions";
+
+.searchBar {
+    display: flex;
+    border: pxToRem(0.5px) solid rgba(0,0,0,0.08);
+    box-shadow: 0 pxToRem(3px) pxToRem(3px) rgb(0 0 0 / 10%);
+    border-radius: pxToRem(1000px);
+    min-height: pxToRem(48px);
+    align-items: stretch;
+    padding-left: pxToRem(25px);
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    color: $gray-primary;
+    font-size: pxToRem(14px);
+}
+
+.researchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.researchSvg {
+    background-color: $pink-primary;
+    margin: 0 pxToRem(8px) 0 pxToRem(15px);
+    border-radius: pxToRem(25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: pxToRem(33px);
+    height: pxToRem(33px);
+}
+
+.text:nth-child(1), .text:nth-child(2)  {
+    color: $black;
+    font-weight: 300;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: pxToRem(20px);
+        width: pxToRem(1px);
+        background-color: $gray-primary;
+        margin: 0 pxToRem(15px);
+    }
+}

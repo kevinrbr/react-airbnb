@@ -4,12 +4,14 @@ interface ResearchSvgProps {
   width?: number;
   height?: number;
   color?: string;
+  stroke?: number;
 }
 
 const ResearchSvg = ({
   width = 24,
   height = 24,
   color = "#979797",
+  stroke = 4,
 }: ResearchSvgProps) => {
   return (
     <svg
@@ -25,7 +27,7 @@ const ResearchSvg = ({
         <path
           d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"
           stroke={color}
-          strokeWidth="4"
+          strokeWidth={stroke}
         ></path>
       </g>
     </svg>

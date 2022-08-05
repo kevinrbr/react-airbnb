@@ -1,0 +1,11 @@
+@import "../../sassStyles/functions";
+@import "../../sassStyles/variables";
+
+.ProfilMenuCondensed {
+    display: flex;
+    align-items: center;
+    border-radius: pxToRem(21px);
+    border: 1px solid $gray-light;
+    padding: pxToRem(5px) pxToRem(5px) pxToRem(5px) pxToRem(12px);
+    margin-left: pxToRem(12px);
+}

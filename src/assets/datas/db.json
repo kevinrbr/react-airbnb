@@ -9,7 +9,9 @@
         "beginningDate": "17-11-2022",
         "finshingDate": "22-11-2022",
         "priceByNight": 207,
-        "stars": 4.71
+        "stars": 4.71,
+        "type": "apparment"
+
       },
       {
         "image": ["../images/destinations/gildeskal/1.webp","../images/destinations/gildeskal/2.webp"],
@@ -20,7 +22,8 @@
         "beginningDate": "20-09-2022",
         "finshingDate": "26-09-2022",
         "priceByNight": 246,
-        "stars": 4.83
+        "stars": 4.83,
+        "type": "home"
       },
       {
         "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
@@ -31,7 +34,8 @@
         "beginningDate": "29-10-2022",
         "finshingDate": "05-11-2022",
         "priceByNight": 137,
-        "stars": 5.0
+        "stars": 5.0,
+        "type": "apparment"
       },
       {
         "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
@@ -42,7 +46,8 @@
         "beginningDate": "29-10-2022",
         "finshingDate": "05-11-2022",
         "priceByNight": 137,
-        "stars": 5.0
+        "stars": 5.0,
+        "type": "apparment"
       },
       {
         "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
@@ -53,7 +58,8 @@
         "beginningDate": "29-10-2022",
         "finshingDate": "05-11-2022",
         "priceByNight": 137,
-        "stars": 5.0
+        "stars": 5.0,
+        "type": "home"
       },
       {
         "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
@@ -64,7 +70,8 @@
         "beginningDate": "29-10-2022",
         "finshingDate": "05-11-2022",
         "priceByNight": 137,
-        "stars": 5.0
+        "stars": 5.0,
+        "type": "home"
       },
       {
         "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
@@ -75,7 +82,8 @@
         "beginningDate": "29-10-2022",
         "finshingDate": "05-11-2022",
         "priceByNight": 137,
-        "stars": 5.0
+        "stars": 5.0,
+        "type": "home"
       },
       {
         "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
@@ -86,7 +94,8 @@
         "beginningDate": "29-10-2022",
         "finshingDate": "05-11-2022",
         "priceByNight": 137,
-        "stars": 5.0
+        "stars": 5.0,
+        "type": "home"
       },
       {
         "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
@@ -97,7 +106,8 @@
         "beginningDate": "29-10-2022",
         "finshingDate": "05-11-2022",
         "priceByNight": 137,
-        "stars": 5.0
+        "stars": 5.0,
+        "type": "home"
       },
       {
         "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
@@ -108,7 +118,8 @@
         "beginningDate": "29-10-2022",
         "finshingDate": "05-11-2022",
         "priceByNight": 137,
-        "stars": 5.0
+        "stars": 5.0,
+        "type": "home"
       },
       {
         "image": ["../images/destinations/murter/1.webp", "../images/destinations/murter/2.webp"],
@@ -119,7 +130,8 @@
         "beginningDate": "29-10-2022",
         "finshingDate": "05-11-2022",
         "priceByNight": 137,
-        "stars": 5.0
+        "stars": 5.0,
+        "type": "home"
       }
     ]
   }

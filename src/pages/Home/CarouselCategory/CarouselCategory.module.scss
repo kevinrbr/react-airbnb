@@ -1,11 +1,19 @@
 @import "../../../sassStyles/variables.scss";
 @import "../../../sassStyles/functions.scss";
+@import "../../../sassStyles/mixins.scss";
 
 .container {
     padding: 0 pxToRem(24px);
     overflow: auto;
     border-bottom: pxToRem(0.5px) solid rgba(0,0,0,0.08);
     box-shadow: 0 pxToRem(3px) pxToRem(3px) rgb(0 0 0 / 4%);
+
+    @include md {
+        border-bottom: inherit;
+        box-shadow: inherit;
+        padding: 0 pxToRem(80px);
+        margin-top: pxToRem(20px);
+    }
 }
 
 .categoriesList {
@@ -38,6 +46,10 @@
     width: 100%;
     margin-right: pxToRem(24px);
     padding: pxToRem(16px) 0;
+    
+    @include md {
+        margin-right: pxToRem(34px);
+    }
 }
 
 .images {

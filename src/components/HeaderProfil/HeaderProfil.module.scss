@@ -1,0 +1,11 @@
+@import "../../sassStyles/_functions.scss";
+
+.headerProfil {
+    display: flex;
+    align-items: center;
+}
+
+.link,
+.languages {
+    padding: pxToRem(12px);
+}

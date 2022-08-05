@@ -9,4 +9,5 @@ export type destinations = {
   finshingDate: Date;
   priceByNight: number;
   stars: number;
+  type: string;
 };

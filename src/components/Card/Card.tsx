@@ -4,6 +4,7 @@ import styles from "./Card.module.scss";
 import PriceByNight from "../PriceByNight/PriceByNight";
 import CardDescription from "../CardDescription/CardDescription";
 import Favorite from "../Favorite/Favorite";
+import { useLocation } from "react-router-dom";
 
 interface DestinationsProps {
   image: string[];
