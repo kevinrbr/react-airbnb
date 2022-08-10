@@ -1,0 +1,72 @@
+@import "../../../sassStyles/variables.scss";
+@import "../../../sassStyles/functions.scss";
+
+
+.filtersContainer  {
+    top: -110px;
+    transform:translateY(0) scale(0);
+    position: absolute;
+
+    &.active
+    {
+        animation: menuAppear .3s forwards;
+
+        @keyframes menuAppear{
+            from{
+                transform: translate(0) scale(0);
+            }
+            to{
+                transform: translateY(146px) scale(1);
+            }
+        }
+    }
+    &.inactive
+    {
+        animation: menuDisppear .3s forwards;
+
+        @keyframes menuDisppear{
+            from{
+                transform: translateY(146px) scale(1);
+            }
+            to{
+                transform: translate(0) scale(0);
+            }
+        }
+    }  
+}
+
+.filtersType {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: pxToRem(25px);
+    
+    li {
+        margin: 0 pxToRem(15px);
+        font-size: pxToRem(16px);
+        font-weight: 100;
+    }
+}
+
+.filtersList {
+    display: flex;
+    border: pxToRem(1px) solid $gray-light;
+    border-radius: pxToRem(32px);
+}
+
+.researchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.researchSvg {
+    background-color: $pink-primary;
+    margin: 0 pxToRem(8px) 0 pxToRem(15px);
+    border-radius: pxToRem(25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: pxToRem(48px);
+    height: pxToRem(48px);
+}

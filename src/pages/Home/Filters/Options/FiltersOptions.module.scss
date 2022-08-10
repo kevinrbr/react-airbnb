@@ -1,0 +1,49 @@
+@import "../../../../sassStyles/functions";
+@import "../../../../sassStyles/variables";
+
+
+.type {
+    padding: pxToRem(14px) pxToRem(32px);
+    position: relative;
+    cursor: pointer;
+    background-clip: padding-box;
+    border: pxToRem(1px) solid transparent;
+    border-radius: pxToRem(32px);
+    padding: pxToRem(14px) pxToRem(32px);
+
+    &:hover {
+        background-color: #EBEBEB;
+    }
+    
+//     &:nth-child(1) , &:nth-child(2) {
+//     &::after {
+//         content: "";
+//         display: inline-block;
+//         height: 1.25rem;
+//         width: 0.0625rem;
+//         background-color: $gray-light;
+//         margin: 0 0.9375rem;
+//         right: 20px;
+//         top: 0;
+//         bottom: 0;
+//         position: absolute;
+//     }
+// }
+}
+
+.title {
+    font-size: pxToRem(13px);
+    font-weight: 600;
+    margin-bottom: pxToRem(4px);
+}
+
+.subTitle {
+    font-size: pxToRem(14px);
+    font-weight: 100;
+    color: $gray-primary;
+}
+
+.duration {
+    display: flex;
+}
+

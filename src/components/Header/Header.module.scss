@@ -4,8 +4,20 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: pxToRem(80px);
   padding: 0 pxToRem(80px);
   border-bottom: 0.5px solid $gray-light;
+  transition: height 0.3s ease;
+
+  &.isOpen {
+    height: pxToRem(160px);
+  }
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }

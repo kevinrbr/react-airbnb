@@ -5,7 +5,7 @@ import HeaderCondensed from "../../components/HeaderCondensed/HeaderCondensed";
 import NavBar from "../../components/NavBar/NavBar";
 import CarouselCategory from "./CarouselCategory/CarouselCategory";
 import DestinationsList from "./DestinationsList/DestinationsList";
-import FiltersMenu from "./FiltersMenu/FiltersMenu";
+import FiltersMenu from "./FiltersMobile/FiltersMobile";
 import styles from "./Home.module.scss";
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
       <CarouselCategory />
       <DestinationsList />
       {isMobile && <NavBar />}
-      {<FiltersMenu />}
+      {/* {<FiltersMobile />} */}
     </div>
   );
 };

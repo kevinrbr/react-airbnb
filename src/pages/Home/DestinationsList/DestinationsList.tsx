@@ -21,7 +21,12 @@ const DestinationsList = () => {
       <ul className={styles.destinationsList}>
         {destinationsList.map((item) => {
           return (
-            <Link target="_blank" state={item} to={`/roomDetails/${item.id}`}>
+            <Link
+              target="_blank"
+              state={item}
+              to={`/roomDetails/${item.id}`}
+              key={item.id}
+            >
               <Card
                 image={item.image}
                 location={item.location}

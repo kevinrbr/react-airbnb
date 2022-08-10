@@ -30,8 +30,8 @@ const CardCarousel = ({ image }: CardCarouselProps) => {
           return <li style={indicatorStyles} />;
         }}
       >
-        {image.map((item) => (
-          <div className={styles.imagesContainer}>
+        {image.map((item, index) => (
+          <div className={styles.imagesContainer} key={index}>
             <img className={styles.images} src={item} />
           </div>
         ))}
