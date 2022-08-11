@@ -1,0 +1,26 @@
+@import "../../../../sassStyles/variables.scss";
+@import "../../../../sassStyles/functions.scss";
+
+.content {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    img {
+        width: pxToRem(122px);
+        border: pxToRem(1px) solid $gray-light;
+        border-radius: pxToRem(12px);
+        margin-bottom: pxToRem(8px);
+        transition: border 0.3s ease;
+
+        &:hover {
+            border: pxToRem(1px) solid $gray-primary;
+        }
+    }
+
+    .title {
+        font-size: pxToRem(15px);
+        font-weight: 100;
+        margin-bottom: pxToRem(30px);
+    }
+}

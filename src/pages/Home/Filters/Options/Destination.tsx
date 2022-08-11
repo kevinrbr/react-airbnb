@@ -13,7 +13,10 @@ const Destination = ({ setActiveTab }: DestinationProps) => {
       onClick={() => setActiveTab(filterTabs.destination)}
     >
       <p className={styles.title}>Destination</p>
-      <span className={styles.subTitle}>Recherchez des destinations</span>
+      <input
+        className={styles.input}
+        placeholder="Recherchez des destinations"
+      />
     </div>
   );
 };

@@ -55,6 +55,7 @@
 .images {
     width: 24px;
     filter: contrast(calc(13 / 44));
+    z-index: -1;
 }
 
 .title {

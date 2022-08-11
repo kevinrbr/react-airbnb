@@ -3,15 +3,16 @@
 
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   height: pxToRem(80px);
   padding: 0 pxToRem(80px);
   border-bottom: 0.5px solid $gray-light;
   transition: height 0.3s ease;
+  margin-top: pxToRem(20px);
 
   &.isOpen {
-    height: pxToRem(160px);
+    height: pxToRem(140px);
   }
 }
 

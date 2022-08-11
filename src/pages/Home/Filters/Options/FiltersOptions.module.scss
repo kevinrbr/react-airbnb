@@ -3,32 +3,37 @@
 
 
 .type {
-    padding: pxToRem(14px) pxToRem(32px);
+    padding: pxToRem(14px) pxToRem(40px);
     position: relative;
     cursor: pointer;
     background-clip: padding-box;
     border: pxToRem(1px) solid transparent;
     border-radius: pxToRem(32px);
-    padding: pxToRem(14px) pxToRem(32px);
 
     &:hover {
         background-color: #EBEBEB;
+
+        .input {
+            background-color: #EBEBEB;
+        }
     }
-    
-//     &:nth-child(1) , &:nth-child(2) {
-//     &::after {
-//         content: "";
-//         display: inline-block;
-//         height: 1.25rem;
-//         width: 0.0625rem;
-//         background-color: $gray-light;
-//         margin: 0 0.9375rem;
-//         right: 20px;
-//         top: 0;
-//         bottom: 0;
-//         position: absolute;
-//     }
-// }
+
+    .input {
+        font-family: Circular;
+        border: inherit;
+        margin: 0;
+        padding: 0;
+        background: none;
+        margin-top: pxToRem(-10px);
+        width: 200px;
+        color: $black;
+
+        &:focus-visible {
+            outline: none;
+        }
+
+        
+    }
 }
 
 .title {
@@ -37,7 +42,7 @@
     margin-bottom: pxToRem(4px);
 }
 
-.subTitle {
+.subTitle, .input {
     font-size: pxToRem(14px);
     font-weight: 100;
     color: $gray-primary;

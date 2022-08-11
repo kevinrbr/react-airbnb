@@ -8,6 +8,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: pxToRem(24px);
+    position: relative;
+    z-index: -1; 
 
     @include sm {
         grid-template-columns: 1fr 1fr;

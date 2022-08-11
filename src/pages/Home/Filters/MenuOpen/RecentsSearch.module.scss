@@ -1,0 +1,37 @@
+@import "../../../../sassStyles/variables.scss";
+@import "../../../../sassStyles/functions.scss";
+
+.content {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .imgContainer {
+        background-color: $gray-secondary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: pxToRem(16px);
+        height: pxToRem(48px);
+        min-width: pxToRem(48px);
+        border-radius: pxToRem(12px);
+    }
+    
+    .details {
+        text-align: left;
+    }
+
+    .title {
+        display: block;
+        font-size: pxToRem(16px);
+        font-weight: 100;
+        color: $light-black;
+    }
+    
+    .subTitle {
+        font-size: pxToRem(12px);
+        font-weight: 100;
+        color: $gray-primary;
+        margin-top: pxToRem(100px);
+    }
+}

@@ -1,0 +1,6 @@
+@import "../../../../sassStyles/variables.scss";
+@import "../../../../sassStyles/functions.scss";
+
+.container {
+    padding: 0 pxToRem(32px);
+}

@@ -1,0 +1,31 @@
+@import "../../../../sassStyles/variables.scss";
+@import "../../../../sassStyles/functions.scss";
+
+.listItem {
+    position: relative;
+    &:first-child {
+        padding: pxToRem(32px) 0;
+    } 
+    &:not(:first-child) {
+        padding: pxToRem(32px) 0;
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            background-color: $gray-secondary;
+            height: pxToRem(0.5px);
+            left: 0;
+            right: 0;
+        }
+    }
+    .title {
+        display :block;
+        font-size: pxToRem(16px);
+        margin-bottom: pxToRem(8px);
+    }
+    .subTitle {
+        color: $gray-primary;
+        font-size: pxToRem(14px);
+        font-weight: 100;
+    }
+}

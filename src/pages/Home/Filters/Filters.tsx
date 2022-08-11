@@ -20,7 +20,9 @@ const renderTabs = {
 };
 
 const Filters = ({ isOpen }: { isOpen: boolean }) => {
-  const [activeTab, setActiveTab] = useState<filterTabs>(filterTabs.none);
+  const [activeTab, setActiveTab] = useState<filterTabs>(
+    filterTabs.destination
+  );
 
   return (
     <div
@@ -44,7 +46,9 @@ const Filters = ({ isOpen }: { isOpen: boolean }) => {
         <Arrival setActiveTab={setActiveTab} />
         <Departure setActiveTab={setActiveTab} />
         <Travelers setActiveTab={setActiveTab} />
-        {renderTabs[activeTab]}
+        {activeTab != filterTabs.none && (
+          <div className={styles.filtersOpen}>{renderTabs[activeTab]}</div>
+        )}
         <li className={styles.researchContainer}>
           <div className={styles.researchSvg}>
             <ResearchSvg color={"#fff"} width={13} height={13} stroke={5} />

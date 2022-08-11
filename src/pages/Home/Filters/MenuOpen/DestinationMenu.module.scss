@@ -1,0 +1,29 @@
+@import "../../../../sassStyles/variables.scss";
+@import "../../../../sassStyles/functions.scss";
+
+.container {
+    display: flex;
+
+    .recentsList{
+        margin-top: pxToRem(40px);
+    }
+    
+    .regionsList {
+        margin-top: pxToRem(40px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .leftContent {
+        min-width: pxToRem(345px);
+        padding: 0 pxToRem(40px);
+        border-right: pxToRem(0.5px) solid $gray-light;
+        margin: pxToRem(40px) 0;
+    }
+
+    .rightContent {
+        padding: 0 pxToRem(40px);
+        margin:  pxToRem(40px) 0;
+    }
+}

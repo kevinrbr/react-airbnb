@@ -3,9 +3,10 @@
 
 
 .filtersContainer  {
-    top: -110px;
+    top: pxToRem(-110px);
     transform:translateY(0) scale(0);
     position: absolute;
+    margin-left: pxToRem(125px);
 
     &.active
     {
@@ -16,7 +17,7 @@
                 transform: translate(0) scale(0);
             }
             to{
-                transform: translateY(146px) scale(1);
+                transform: translateY(150px) scale(1);
             }
         }
     }
@@ -26,7 +27,7 @@
 
         @keyframes menuDisppear{
             from{
-                transform: translateY(146px) scale(1);
+                transform: translateY(150px) scale(1);
             }
             to{
                 transform: translate(0) scale(0);
@@ -52,21 +53,38 @@
     display: flex;
     border: pxToRem(1px) solid $gray-light;
     border-radius: pxToRem(32px);
+    max-width: pxToRem(850px);
 }
 
 .researchContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: pxToRem(120px);
+
+    .researchSvg {
+        background-color: $pink-primary;
+        margin: 0 pxToRem(8px) 0 pxToRem(15px);
+        border-radius: pxToRem(25px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: pxToRem(48px);
+        height: pxToRem(48px);
+        position: absolute;
+        right: 0;
+    }
 }
 
-.researchSvg {
-    background-color: $pink-primary;
-    margin: 0 pxToRem(8px) 0 pxToRem(15px);
-    border-radius: pxToRem(25px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: pxToRem(48px);
-    height: pxToRem(48px);
+.filtersOpen {
+    position: absolute;
+    top: pxToRem(120px);
+    right: 0;
+    position: absolute;
+    background: $white;
+    border-radius: pxToRem(32px);
+    border: pxToRem(1px) solid $gray-light;
+    box-shadow: 0 0 pxToRem(10px) pxToRem(2px) rgba(169, 169, 169, 0.465);
+    max-width: 100%;
+    z-index: 1000;
 }
