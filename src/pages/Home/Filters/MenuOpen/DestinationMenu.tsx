@@ -16,8 +16,8 @@ const DestinationMenu = () => {
       <div className={styles.rightContent}>
         <span className={styles.title}>Rechercher par région</span>
         <ul className={styles.regionsList}>
-          {regions.map((item) => {
-            return <RegionFilter text={item.text} image={item.img} />;
+          {regions.map((item, index) => {
+            return <RegionFilter text={item.text} image={item.img} key={index}/>;
           })}
         </ul>
       </div>

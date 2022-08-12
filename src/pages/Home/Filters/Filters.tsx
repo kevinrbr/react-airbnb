@@ -19,10 +19,23 @@ const renderTabs = {
   [filterTabs.departure]: <DurationMenu />,
 };
 
+interface FiltersProps {
+  travelersTotal: number;
+  setTravelersTotal: React.Dispatch<React.SetStateAction<number>>;
+}
+
+export const FilterContext = React.createContext<FiltersProps>({
+  travelersTotal: 0,
+  setTravelersTotal: () => {},
+});
+
 const Filters = ({ isOpen }: { isOpen: boolean }) => {
   const [activeTab, setActiveTab] = useState<filterTabs>(
     filterTabs.destination
   );
+
+  const [travelersTotal, setTravelersTotal] = useState(0);
+  const value = { travelersTotal, setTravelersTotal };
 
   return (
     <div
@@ -42,13 +55,15 @@ const Filters = ({ isOpen }: { isOpen: boolean }) => {
           [styles.filtersList]: true,
         })}
       >
-        <Destination setActiveTab={setActiveTab} />
-        <Arrival setActiveTab={setActiveTab} />
-        <Departure setActiveTab={setActiveTab} />
-        <Travelers setActiveTab={setActiveTab} />
-        {activeTab != filterTabs.none && (
-          <div className={styles.filtersOpen}>{renderTabs[activeTab]}</div>
-        )}
+        <FilterContext.Provider value={value}>
+          <Destination setActiveTab={setActiveTab} />
+          <Arrival setActiveTab={setActiveTab} />
+          <Departure setActiveTab={setActiveTab} />
+          <Travelers setActiveTab={setActiveTab} />
+          {activeTab != filterTabs.none && (
+            <div className={styles.filtersOpen}>{renderTabs[activeTab]}</div>
+          )}
+        </FilterContext.Provider>
         <li className={styles.researchContainer}>
           <div className={styles.researchSvg}>
             <ResearchSvg color={"#fff"} width={13} height={13} stroke={5} />

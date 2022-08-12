@@ -2,5 +2,6 @@
 @import "../../../../sassStyles/functions.scss";
 
 .container {
-    padding: 0 pxToRem(32px);
+    padding: pxToRem(8px) pxToRem(40px);
+    max-width: pxToRem(415px);
 }

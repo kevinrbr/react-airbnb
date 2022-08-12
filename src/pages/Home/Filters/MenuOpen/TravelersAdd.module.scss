@@ -3,11 +3,16 @@
 
 .listItem {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     &:first-child {
         padding: pxToRem(32px) 0;
     } 
     &:not(:first-child) {
         padding: pxToRem(32px) 0;
+
         &::after {
             position: absolute;
             content: "";
@@ -27,5 +32,33 @@
         color: $gray-primary;
         font-size: pxToRem(14px);
         font-weight: 100;
+    }
+
+    .counter {
+        display: flex;
+        align-items: center;
+    }
+
+    .controller {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: pxToRem(1px) solid $gray-light;
+        border-radius: 100px;
+        height: pxToRem(32px);
+        width: pxToRem(32px);
+        padding: pxToRem(8px);
+        &:not(:disabled) {
+            &:hover {
+                border: pxToRem(1px) solid $light-black;
+            }
+        }
+    }
+
+    .value {
+        font-size: pxToRem(16px);
+        font-weight: 100;
+        width: pxToRem(35px);
+        text-align: center;
     }
 }

@@ -15,7 +15,7 @@
     min-height: pxToRem(48px);
     align-items: stretch;
     padding-left: pxToRem(25px);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 1s ease;
 
     &.isOpen {
         display: none;
