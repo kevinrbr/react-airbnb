@@ -24,5 +24,5 @@ export const useCounter = (num: number) => {
     [count]
   );
 
-  return { count, increment, decrement, total};
+  return { count, increment, decrement, total };
 };

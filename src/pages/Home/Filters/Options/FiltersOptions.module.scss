@@ -34,21 +34,25 @@
 
         
     }
-}
+    .title {
+        font-size: pxToRem(13px);
+        font-weight: 600;
+        margin-bottom: pxToRem(4px);
+    }
+    
+    .subTitle, .input {
+        font-size: pxToRem(14px);
+        font-weight: 100;
+        color: $gray-primary;
+    }
+    
+    .duration {
+        display: flex;
+    }
 
-.title {
-    font-size: pxToRem(13px);
-    font-weight: 600;
-    margin-bottom: pxToRem(4px);
-}
-
-.subTitle, .input {
-    font-size: pxToRem(14px);
-    font-weight: 100;
-    color: $gray-primary;
-}
-
-.duration {
-    display: flex;
+    .bold {
+        font-weight: 600;
+        color: $black;
+    }
 }
 

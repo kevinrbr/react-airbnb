@@ -48,10 +48,15 @@
         height: pxToRem(32px);
         width: pxToRem(32px);
         padding: pxToRem(8px);
+
         &:not(:disabled) {
             &:hover {
                 border: pxToRem(1px) solid $light-black;
             }
+        }
+
+        &:disabled {
+            border: pxToRem(1px) solid $gray-light;
         }
     }
 

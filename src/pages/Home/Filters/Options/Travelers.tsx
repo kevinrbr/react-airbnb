@@ -16,7 +16,18 @@ const Travelers = ({ setActiveTab }: TravelersProps) => {
     >
       <p className={styles.title}>Voyageurs</p>
       <span className={styles.subTitle}>
-        {travelersTotal != 0 ? travelersTotal : "Qui ?"}
+        {travelersTotal != 0 ? (
+          <span className={styles.bold}> {travelersTotal}</span>
+        ) : (
+          "Qui ?"
+        )}
+        {travelersTotal > 1 ? (
+          <span className={styles.bold}> voyageurs</span>
+        ) : travelersTotal === 0 ? (
+          ""
+        ) : (
+          <span className={styles.bold}> voyageur</span>
+        )}
       </span>
     </div>
   );
