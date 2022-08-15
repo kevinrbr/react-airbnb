@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./Duration.module.scss";
+import styles from "./DurationMenu.module.scss";
 
 export const DurationMenu = () => {
-  return <div>Duration</div>;
+  return <div className={styles.container}></div>;
 };

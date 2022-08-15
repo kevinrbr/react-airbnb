@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import styles from "./DestinationsList.module.scss";
 import axios from "axios";
 import { destinations } from "../../../types/destinations/destinations";
-import Card from "../../../components/Card/Card";
-import CardCarousel from "../../../components/CardCarousel/CardCarousel";
+import Card from "../Card/Card";
+import CardCarousel from "../Card/CardCarousel/CardCarousel";
 
 const DestinationsList = () => {
   const [destinationsList, setDestinationsList] = useState<destinations[]>([]);
@@ -32,7 +32,7 @@ const DestinationsList = () => {
                 location={item.location}
                 sellerStatus={item.sellerStatus}
                 begginningDate={item.begginningDate}
-                finshingDate={item.finshingDate}
+                finishingDate={item.finshingDate}
                 priceByNight={item.priceByNight}
                 stars={item.stars}
               >

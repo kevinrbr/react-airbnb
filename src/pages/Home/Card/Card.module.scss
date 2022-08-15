@@ -1,0 +1,20 @@
+@import "../../../sassStyles/functions";
+
+.card {
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 4fr 1fr;    
+}
+
+.contentRight {
+    text-align: right;
+}
+
+.location {
+    font-size: pxToRem(15px);
+}

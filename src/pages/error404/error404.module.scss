@@ -1,0 +1,18 @@
+@import "../../sassStyles/variables";
+@import "../../sassStyles/functions";
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    .title {
+        font-size: pxToRem(80px);
+    }
+    .subTitle {
+        font-size: pxToRem(36px);
+        margin-top: pxToRem(20px);
+    }
+}

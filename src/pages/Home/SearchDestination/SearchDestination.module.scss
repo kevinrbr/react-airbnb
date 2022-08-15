@@ -16,6 +16,7 @@
     align-items: stretch;
     padding-left: pxToRem(25px);
     transition: box-shadow 1s ease;
+    margin-left: pxToRem(120px);
 
     &.isOpen {
         display: none;

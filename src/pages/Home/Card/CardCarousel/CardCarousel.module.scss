@@ -1,0 +1,13 @@
+@import "../../../../sassStyles/functions";
+
+.CardCarousel {
+    border-radius: pxToRem(12px);
+    overflow: hidden;
+    margin-bottom: pxToRem(12px);
+}
+
+.images {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 21.05/20;
+}
